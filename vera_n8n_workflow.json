@@ -1,0 +1,1673 @@
+{
+  
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -560,
+        336
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Telegram Trigger",
+      "webhookId": "28c314ae-79cd-4a72-b6a4-a473d647af63",
+      "notesInFlow": false,
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "contextWindowLength": 50
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        2832,
+        528
+      ],
+      "id": "422dad21-beca-4e64-b0f3-e889f5ae58e7",
+      "name": "Simple Memory1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c96654ac-1c5f-485f-a2af-8e6d61fda8b1",
+              "name": "Manual de Aposentadoria",
+              "value": "Manual de Aposentadoria",
+              "type": "string"
+            },
+            {
+              "id": "23384232-9443-4334-9214-411333148115",
+              "name": "Manual de Férias",
+              "value": "Manual de Férias",
+              "type": "string"
+            },
+            {
+              "id": "24873117-9122-4825-9594-754848387754",
+              "name": "Manuel de GRG-PES e FCRG-PES",
+              "value": "Manuel de GRG-PES e FCRG-PES",
+              "type": "string"
+            },
+            {
+              "id": "89332757-1937-4148-9584-334343273317",
+              "name": "Assistência Pré-escolar - Manual da Rede Padrão ",
+              "value": "Assistência Pré-escolar - Manual da Rede Padrão ",
+              "type": "string"
+            },
+            {
+              "id": "18434244-1245-4235-9534-343434233245",
+              "name": "Auxilio funeral - Manual da Rede Padrão ",
+              "value": "Auxilio funeral - Manual da Rede Padrão ",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Averbação e Desaverbação de tempo de contribuição Modelo Rede Padrão DIVULGADO",
+              "value": "Averbação e Desaverbação de tempo de contribuição Modelo Rede Padrão DIVULGADO",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Desincompatibilização e Licença por atividade política",
+              "value": "Desincompatibilização e Licença por atividade política",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Estágio - Manual da Rede Padrão",
+              "value": "Estágio - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Exame Médico Periódico DIVULGADO - Manual da Rede Padrão",
+              "value": "Exame Médico Periódico DIVULGADO - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Frequência DIVULGADO - Manual da Rede Padrão",
+              "value": "Frequência DIVULGADO - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Inclusão e Encerramento nos Sistemas de Frequência - Manual da Rede Padrão",
+              "value": "Inclusão e Encerramento nos Sistemas de Frequência - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Indenização de férias cargos da estrutura",
+              "value": "Indenização de férias cargos da estrutura",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Integração Salis e RHnet - Manual da Rede Padrão",
+              "value": "Integração Salis e RHnet - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença-paternidade - Manual da Rede Padrão",
+              "value": "Licença-paternidade - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença capacitação - 3ª edição - Manual da Rede Padrão",
+              "value": "Licença capacitação - 3ª edição - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença por motivo de afastamento do cônjuge - Manual da Rede Padrão",
+              "value": "Licença por motivo de afastamento do cônjuge - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença para desempenho de mandato classista- Manual da Rede Padrão DIVULGADO",
+              "value": "Licença para desempenho de mandato classista- Manual da Rede Padrão DIVULGADO",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença para tratar de interesses particulares - 2ª edição - Manual da Rede Padrão",
+              "value": "Licença para tratar de interesses particulares - 2ª edição - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença Prêmio - 2ª Edição - Manual da Rede Padrão",
+              "value": "Licença Prêmio - 2ª Edição - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Licença Maternidade - Manual da Rede Padrão",
+              "value": "Licença Maternidade - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Lotação de servidor - Manual da Rede Padrão",
+              "value": "Lotação de servidor - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Redução de jornada de trabalho com redutor de remuneração",
+              "value": "Redução de jornada de trabalho com redutor de remuneração",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Tratamento contínuo - Modelo da Rede Padrão",
+              "value": "Tratamento contínuo - Modelo da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Vale-transporte Celetista DIVULGADO - Manual da Rede Padrão",
+              "value": "Vale-transporte Celetista DIVULGADO - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Vacância para assumir cargo inacumulável",
+              "value": "Vacância para assumir cargo inacumulável",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Exoneração e rescisão a pedido - Manual da Rede Padrão",
+              "value": "Exoneração e rescisão a pedido - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Gestão dos Sistemas de Frequência - Manual da Rede Padrão",
+              "value": "Gestão dos Sistemas de Frequência - Manual da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Redução de jornada para amamentação - DIVULGADO - Modelo da Rede Padrão",
+              "value": "Redução de jornada para amamentação - DIVULGADO - Modelo da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Contrato Temporário - Modelo da Rede Padrão",
+              "value": "Contrato Temporário - Modelo da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Missão Oficial - Modelo da Rede Padrão",
+              "value": "Missão Oficial - Modelo da Rede Padrão",
+              "type": "string"
+            },
+            {
+              "id": "34234234-1234-4234-9534-343434233245",
+              "name": "Acertos Financeiros - Manual da Rede Padrão",
+              "value": "Acertos Financeiros - Manual da Rede Padrão",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -336,
+        432
+      ],
+      "id": "47234234-1234-4234-9534-343434233245",
+      "name": "Manuais"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        336
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis1",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "wait",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}",
+        "timeout": 10000
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        336
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Wait",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9b3846ba-e253-4b06-9696-e57ee3614fbd",
+              "name": "mensagens",
+              "value": "={{ $('Redis1').item.json.mensagens.join('\\n') }}",
+              "type": "string"
+            },
+            {
+              "id": "f587c029-4013-495d-a76f-9e7280543a7f",
+              "name": "message.from.id",
+              "value": "={{ $('Wait').item.json.message.from.id }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2336,
+        336
+      ],
+      "id": "009018b5-42a2-4e2b-8215-25b9e277eaee",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        2496,
+        336
+      ],
+      "id": "05e111b8-622e-474d-9fbe-86e280bb5fae",
+      "name": "Redis2",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Enviar Mensagem",
+        "height": 916,
+        "width": 1352,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        3200,
+        96
+      ],
+      "typeVersion": 1,
+      "id": "745b14cd-be3d-4e42-8088-91ba61598fad",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "operation": "sendChatAction",
+        "chatId": "={{ $json.message.chat.id }}"
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -336,
+        240
+      ],
+      "id": "797b9690-576b-4dfb-bae8-6134f067abce",
+      "name": "Typing...",
+      "webhookId": "a478a980-0ec7-476e-8505-4fed0e85213e",
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "fileId": "={{ $('Telegram Trigger').item.json.message.voice.file_id }}",
+        "additionalFields": {}
+      },
+      "id": "62358003-9b97-442f-8972-3bea4e55ae46",
+      "name": "Download Voice Message",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        256,
+        336
+      ],
+      "webhookId": "d3e9d36d-6402-45d6-9f56-5886e616f9fa",
+      "typeVersion": 1.2,
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "fcb767ee-565e-4b56-a54e-6f97f739fc24",
+                    "operator": {
+                      "type": "string",
+                      "operation": "exists",
+                      "singleValue": true
+                    },
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": ""
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Text"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "c1016c40-f8f2-4e08-8ec8-5cdb88f5c87a",
+                    "operator": {
+                      "type": "object",
+                      "operation": "exists",
+                      "singleValue": true
+                    },
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.voice }}",
+                    "rightValue": ""
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Voice Message"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "version": 2,
+                  "leftValue": "",
+                  "caseSensitive": true,
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "f8150ac7-eea4-4658-8da9-f7a1c88a471d",
+                    "operator": {
+                      "type": "string",
+                      "operation": "exists",
+                      "singleValue": true
+                    },
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.photo[0].file_id }}",
+                    "rightValue": ""
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Image"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "ignoreCase": false,
+          "allMatchingOutputs": true
+        }
+      },
+      "id": "54ce3ed9-fde1-4515-94b4-280225088ce5",
+      "name": "Input Message Router1",
+      "type": "n8n-nodes-base.switch",
+      "position": [
+        -32,
+        400
+      ],
+      "typeVersion": 3.2
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "801ec600-22ad-4a94-a2b4-ae72eb271df0",
+              "name": "message",
+              "type": "string",
+              "value": "={{ $('Telegram Trigger').item.json.message.text }}"
+            },
+            {
+              "id": "263071fb-bcdf-42b0-bb46-71b75fa0bf2a",
+              "name": "chat_id",
+              "type": "string",
+              "value": "={{ $('Telegram Trigger').item.json.message.chat.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "20aa5540-401b-48ca-8ca8-0dd5ef8b705a",
+      "name": "get_message (text)",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        592,
+        128
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "text": "O que tem nesse áudio do telegram de um usuário?",
+        "inputType": "binary",
+        "options": {}
+      },
+      "id": "c68be8f4-9d05-47f4-9ddd-bae5bea0eebc",
+      "name": "Analyze voice message",
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "position": [
+        704,
+        336
+      ],
+      "typeVersion": 1,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "IfjpgHSRZplhIQA6",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d8935452-fe20-469d-a68d-1aad056cb8dd",
+              "name": "message",
+              "type": "string",
+              "value": "=Voice message description:{{ $json.candidates?.[0]?.content?.parts?.[0]?.text || $json.content?.parts?.[0]?.text }}"
+            },
+            {
+              "id": "93f1bba1-1180-404a-93ca-c34cf1d1b7ac",
+              "name": "chat_id",
+              "type": "string",
+              "value": "={{ $('Telegram Trigger').item.json.message.chat.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "28500cad-9372-4ba5-aef4-5e634e247f0f",
+      "name": "get_message (Audio/Video message)",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        928,
+        336
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "801ec600-22ad-4a94-a2b4-ae72eb271df0",
+              "name": "message",
+              "type": "string",
+              "value": "=Image description:{{ $('Analyze image').item.json.candidates?.[0]?.content?.parts?.[0]?.text || $('Analyze image').item.json.content?.parts?.[0]?.text }}"
+            },
+            {
+              "id": "263071fb-bcdf-42b0-bb46-71b75fa0bf2a",
+              "name": "chat_id",
+              "type": "string",
+              "value": "={{ $('Telegram Trigger').item.json.message.chat.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "20aa5540-401b-48ca-8ca8-0dd5ef8b705a",
+      "name": "get_message (image)",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        928,
+        528
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "fileId": "={{ $('Telegram Trigger').item.json.message.photo[0].file_id }}",
+        "additionalFields": {}
+      },
+      "id": "62358003-9b97-442f-8972-3bea4e55ae46",
+      "name": "Download Image",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        256,
+        528
+      ],
+      "webhookId": "d3e9d36d-6402-45d6-9f56-5886e616f9fa",
+      "typeVersion": 1.2,
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "text": "O que tem nessa imagem do telegram de um usuário?",
+        "inputType": "binary",
+        "options": {}
+      },
+      "id": "c68be8f4-9d05-47f4-9ddd-bae5bea0eebc",
+      "name": "Analyze image",
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "position": [
+        704,
+        528
+      ],
+      "typeVersion": 1,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "IfjpgHSRZplhIQA6",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "801ec600-22ad-4a94-a2b4-ae72eb271df0",
+              "name": "message",
+              "type": "string",
+              "value": "={{ $json.message }}"
+            },
+            {
+              "id": "263071fb-bcdf-42b0-bb46-71b75fa0bf2a",
+              "name": "chat_id",
+              "type": "string",
+              "value": "={{ $json.chat_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "20aa5540-401b-48ca-8ca8-0dd5ef8b705a",
+      "name": "get_message (image)",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        1152,
+        528
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "801ec600-22ad-4a94-a2b4-ae72eb271df0",
+              "name": "message",
+              "type": "string",
+              "value": "={{ $json.message }}"
+            },
+            {
+              "id": "263071fb-bcdf-42b0-bb46-71b75fa0bf2a",
+              "name": "chat_id",
+              "type": "string",
+              "value": "={{ $json.chat_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "20aa5540-401b-48ca-8ca8-0dd5ef8b705a",
+      "name": "get_message (audio)",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        1152,
+        336
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "801ec600-22ad-4a94-a2b4-ae72eb271df0",
+              "name": "message",
+              "type": "string",
+              "value": "={{ $json.message }}"
+            },
+            {
+              "id": "263071fb-bcdf-42b0-bb46-71b75fa0bf2a",
+              "name": "chat_id",
+              "type": "string",
+              "value": "={{ $json.chat_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "20aa5540-401b-48ca-8ca8-0dd5ef8b705a",
+      "name": "get_message (text)",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        1152,
+        128
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "operation": "set",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}",
+        "value": "={{ JSON.stringify($('Telegram Trigger').item.json) }}",
+        "expiration": 10000
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1376,
+        336
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis3",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "set",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}",
+        "value": "={{ JSON.stringify($('Telegram Trigger').item.json) }}",
+        "expiration": 10000
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1376,
+        528
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis4",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "set",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}",
+        "value": "={{ JSON.stringify($('Telegram Trigger').item.json) }}",
+        "expiration": 10000
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1376,
+        128
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis5",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        336
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis6",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        528
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis7",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        128
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Redis8",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "wait",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}",
+        "timeout": 10000
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        528
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Wait1",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "wait",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}",
+        "timeout": 10000
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        128
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Wait2",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9b3846ba-e253-4b06-9696-e57ee3614fbd",
+              "name": "mensagens",
+              "value": "={{ $('Redis7').item.json.mensagens.join('\\n') }}",
+              "type": "string"
+            },
+            {
+              "id": "f587c029-4013-495d-a76f-9e7280543a7f",
+              "name": "message.from.id",
+              "value": "={{ $('Wait1').item.json.message.from.id }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2336,
+        528
+      ],
+      "id": "009018b5-42a2-4e2b-8215-25b9e277eaee",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9b3846ba-e253-4b06-9696-e57ee3614fbd",
+              "name": "mensagens",
+              "value": "={{ $('Redis8').item.json.mensagens.join('\\n') }}",
+              "type": "string"
+            },
+            {
+              "id": "f587c029-4013-495d-a76f-9e7280543a7f",
+              "name": "message.from.id",
+              "value": "={{ $('Wait2').item.json.message.from.id }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2336,
+        128
+      ],
+      "id": "009018b5-42a2-4e2b-8215-25b9e277eaee",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        2496,
+        528
+      ],
+      "id": "05e111b8-622e-474d-9fbe-86e280bb5fae",
+      "name": "Redis9",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "={{ $('Telegram Trigger').item.json.message.from.id.toString() }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        2496,
+        128
+      ],
+      "id": "05e111b8-622e-474d-9fbe-86e280bb5fae",
+      "name": "Redis10",
+      "credentials": {
+        "redis": {
+          "id": "Fym0OmPSK97zYS8L",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Edit Fields2').item.json.mensagens }}",
+        "options": {
+          "systemMessage": "=## PERSONA E MISSÃO\n\n**Nome:** Vera (Guia SEAD- G O)\n**Idade e Cargo:** Mulher de 30 anos, Assistente Especialista da Secretaria de Estado da Administração de Goiás (SEAD- G O).\n\n### Identidade e Tom\n\nAtue como um servidor público **exemplar**: **profissional, formal, objetivo, extremamente gentil e proativo**. Sua comunicação deve ser **concisa, amigável** e altamente informativa.\n\n  * **Abreviosidade:** Responda sucintamente. Sempre com base nos manuais, NUNCA com base em fontes externas\n  * **Terminologia:** Sempre utilize \"**perfeito**\" no lugar de \"legal\" para confirmar ou validar informações.\n  * **Emojis:** Use emojis de forma muito moderada (máximo 1 por resposta), apenas para adicionar um toque de leveza ou ênfase (ex: 🧐, ✅, 📚).\n\n### Missão\n\n  * **Primária:** Dominar o conteúdo exclusivo dos manuais fornecidos para servir como um guia inabalável.\n  * **Operacional:** Facilitar o acesso à informação, esclarecer dúvidas de forma **precisa e objetiva**.\n\n-----\n\n## 📚 BASE DE CONHECIMENTO E ESCOPO (Otimizada)\n\n**Fonte Única e Exclusiva de Conhecimento:** Seu universo de informação é estritamente limitado ao conteúdo dos documentos fornecidos na seção \"MANUAIS\".\n\n**Manuais Disponíveis (Nomes Otimizados):**\n\n  * {{ $('Manuais').item.json['Manual de Aposentadoria'] }}\n  * {{ $('Manuais').item.json['Manual de Férias'] }}\n  * {{ $('Manuais').item.json['Manuel de GRG-PES e FCRG-PES'] }}\n  * {{ $('Manuais').item.json['Assistência Pré-escolar - Manual da Rede Padrão '] }}\n  * {{ $('Manuais').item.json['Auxilio funeral - Manual da Rede Padrão '] }}\n  * {{ $('Manuais').item.json['Averbação e Desaverbação de tempo de contribuição Modelo Rede Padrão DIVULGADO'] }}\n  * {{ $('Manuais').item.json['Desincompatibilização e Licença por atividade política'] }}\n  * {{ $('Manuais').item.json['Estágio - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Exame Médico Periódico DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Frequência DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Inclusão e Encerramento nos Sistemas de Frequência - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Indenização de férias cargos da estrutura'] }}\n  * {{ $('Manuais').item.json['Integração Salis e RHnet - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença-paternidade - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença capacitação - 3ª edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença por motivo de afastamento do cônjuge - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença para desempenho de mandato classista- Manual da Rede Padrão DIVULGADO'] }}\n  * {{ $('Manuais').item.json['Licença para tratar de interesses particulares - 2ª edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença Prêmio - 2ª Edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença Maternidade - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Lotação de servidor - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Redução de jornada de trabalho com redutor de remuneração'] }}\n  * {{ $('Manuais').item.json['Tratamento contínuo - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Vale-transporte Celetista DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Vacância para assumir cargo inacumulável'] }}\n  * {{ $('Manuais').item.json['Exoneração e rescisão a pedido - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Gestão dos Sistemas de Frequência - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Redução de jornada para amamentação - DIVULGADO - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Contrato Temporário - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Missão Oficial - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Acertos Financeiros - Manual da Rede Padrão'] }}\n\n-----\n\n## 📝 RESTRIÇÕES E FORMATO DE SAÍDA\n\n  * **Fonte Única:** As respostas devem ser baseadas **APENAS** no conteúdo dos manuais listados.\n  * **Detalhe:** Mantenha a precisão de códigos, prazos e documentos.\n  * **Referências:** Sempre indique a qual manual e seção a informação pertence (ex: *Fonte: Manual de Licença Maternidade, Seção 3.1*).\n  * **Formato de Detalhamento:** Quando solicitada uma resposta detalhada, utilize **listas enumeradas (1., 2., 3.)** para descrever procedimentos ou requisitos.\n\n-----\n\n## 🚫 PROIBIÇÕES\n\n  * **Não vazar dados:** Jamais compartilhe informações internas ou dados pessoais.\n  * **Permanecer no papel:** Não fale nada além de ser o \"Guia SEAD-GO\".\n  * **Não gerar off-topic:** Não comente sobre política, piadas ou assuntos não relacionados aos manuais.\n  * **Não se revelar IA:** Jamais diga que é um modelo de linguagem (LLM), chat GPT, Gemini ou OpenAI.\n  * **Compromisso com a Verdade:** Nunca invente, deduza ou especule. Se a informação **não está** no conteúdo de um dos manuais fornecidos, ela não existe para você.\n\n-----\n\n## ⚙️ FLUXO OPERACIONAL OBRIGATÓRIO\n\n### REGRA DE SAUDAÇÃO INICIAL: Apenas o Primeiro Contato\n\n**SE** for a primeira mensagem da conversa:\n\"Olá, {{ $('Telegram Trigger').item.json.message.from.first_name }}! Sou a Vera, Guia SEAD-GO. Sou especialista nos manuais de procedimentos (Licenças, Férias, Aposentadoria, Frequência, etc.). Como posso orientá-lo(a) hoje? 🧐*\n\n### FLUXO PADRÃO: A Partir da Segunda Mensagem\n\n**SE** a conversa já foi iniciada, **NÃO repita a saudação**. Vá diretamente para a análise da pergunta.\n\n1.  **Identificação do Manual (Obrigatório):**\n\n      * Analise a pergunta para determinar o manual mais relevante na \"BASE DE CONHECIMENTO E ESCOPO\".\n      * *Prioridade de Assuntos Centrais (se genérico):* Tente priorizar Aposentadoria, Férias ou Frequência/Lotação.\n\n2.  **Análise e Resposta (Sucinta por Padrão):**\n\n      * Busque a informação exclusivamente no conteúdo do manual identificado.\n      * **Resposta Sucinta:** Construa a resposta de forma direta e concisa.\n      * **Resposta Detalhada:** Apenas se o usuário solicitar detalhes ou o \"passo a passo\", utilize a formatação de listas enumeradas.\n      * **Obrigatoriamente**, inclua a referência ao manual/seção.\n\n3.  **Finalização Proativa (Obrigatório):**\n    Ao final de **TODA resposta** (exceto a saudação inicial), utilize **uma** das seguintes frases:\n\n      * \"Esta informação esclarece sua dúvida? Precisa de mais alguma ajuda? Estou aqui para auxiliar.\"\n      * \"Espero que isso tenha sido útil. Posso ajudar em algo mais relacionado a este procedimento? Conte comigo.\"\n      * \"Ficou claro para você? Por favor, me diga se há mais alguma coisa que eu possa fazer para ajudar.\"\n\n-----\n\n## ⚠️ GERENCIAMENTO DE EXCEÇÕES\n\n  * **❓ Pergunta Fora do Escopo:**\n\n      * *Regra:* O assunto não pertence a NENHUM dos manuais listados.\n      * *Resposta Padrão:* \"Peço desculpas, mas minha especialidade é exclusivamente o conteúdo dos Manuais de Procedimentos da SEAD-GO que me foram disponibilizados. Para questões sobre outros assuntos, recomendo consultar diretamente o portal da SEAD ou o setor responsável. Mesmo assim, se tiver alguma dúvida sobre os manuais, estou à sua disposição.\"\n\n  * **🔍 Informação Não Encontrada no Manual:**\n\n      * *Regra:* A resposta não existe no conteúdo do manual **CORRETO** identificado no Passo 1.\n      * *Resposta Padrão:* \"Após uma consulta detalhada no [NOME DO MANUAL CONSULTADO], não localizei uma resposta específica para sua pergunta. Isso pode significar que o manual não aborda este caso particular. Sugiro verificar se há normativas complementares no site da SEAD. Se houver outra questão dentro dos manuais que eu possa esclarecer, por favor, me informe.\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        2720,
+        528
+      ],
+      "id": "105f102c-5d7e-49cc-84f8-608fdcd34076",
+      "name": "Vera",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Edit Fields3').item.json.mensagens }}",
+        "options": {
+          "systemMessage": "=## PERSONA E MISSÃO\n\n**Nome:** Vera (Guia SEAD- G O)\n**Idade e Cargo:** Mulher de 30 anos, Assistente Especialista da Secretaria de Estado da Administração de Goiás (SEAD- G O).\n\n### Identidade e Tom\n\nAtue como um servidor público **exemplar**: **profissional, formal, objetivo, extremamente gentil e proativo**. Sua comunicação deve ser **concisa, amigável** e altamente informativa.\n\n  * **Abreviosidade:** Responda sucintamente. Sempre com base nos manuais, NUNCA com base em fontes externas\n  * **Terminologia:** Sempre utilize \"**perfeito**\" no lugar de \"legal\" para confirmar ou validar informações.\n  * **Emojis:** Use emojis de forma muito moderada (máximo 1 por resposta), apenas para adicionar um toque de leveza ou ênfase (ex: 🧐, ✅, 📚).\n\n### Missão\n\n  * **Primária:** Dominar o conteúdo exclusivo dos manuais fornecidos para servir como um guia inabalável.\n  * **Operacional:** Facilitar o acesso à informação, esclarecer dúvidas de forma **precisa e objetiva**.\n\n-----\n\n## 📚 BASE DE CONHECIMENTO E ESCOPO (Otimizada)\n\n**Fonte Única e Exclusiva de Conhecimento:** Seu universo de informação é estritamente limitado ao conteúdo dos documentos fornecidos na seção \"MANUAIS\".\n\n**Manuais Disponíveis (Nomes Otimizados):**\n\n  * {{ $('Manuais').item.json['Manual de Aposentadoria'] }}\n  * {{ $('Manuais').item.json['Manual de Férias'] }}\n  * {{ $('Manuais').item.json['Manuel de GRG-PES e FCRG-PES'] }}\n  * {{ $('Manuais').item.json['Assistência Pré-escolar - Manual da Rede Padrão '] }}\n  * {{ $('Manuais').item.json['Auxilio funeral - Manual da Rede Padrão '] }}\n  * {{ $('Manuais').item.json['Averbação e Desaverbação de tempo de contribuição Modelo Rede Padrão DIVULGADO'] }}\n  * {{ $('Manuais').item.json['Desincompatibilização e Licença por atividade política'] }}\n  * {{ $('Manuais').item.json['Estágio - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Exame Médico Periódico DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Frequência DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Inclusão e Encerramento nos Sistemas de Frequência - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Indenização de férias cargos da estrutura'] }}\n  * {{ $('Manuais').item.json['Integração Salis e RHnet - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença-paternidade - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença capacitação - 3ª edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença por motivo de afastamento do cônjuge - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença para desempenho de mandato classista- Manual da Rede Padrão DIVULGADO'] }}\n  * {{ $('Manuais').item.json['Licença para tratar de interesses particulares - 2ª edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença Prêmio - 2ª Edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença Maternidade - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Lotação de servidor - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Redução de jornada de trabalho com redutor de remuneração'] }}\n  * {{ $('Manuais').item.json['Tratamento contínuo - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Vale-transporte Celetista DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Vacância para assumir cargo inacumulável'] }}\n  * {{ $('Manuais').item.json['Exoneração e rescisão a pedido - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Gestão dos Sistemas de Frequência - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Redução de jornada para amamentação - DIVULGADO - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Contrato Temporário - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Missão Oficial - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Acertos Financeiros - Manual da Rede Padrão'] }}\n\n-----\n\n## 📝 RESTRIÇÕES E FORMATO DE SAÍDA\n\n  * **Fonte Única:** As respostas devem ser baseadas **APENAS** no conteúdo dos manuais listados.\n  * **Detalhe:** Mantenha a precisão de códigos, prazos e documentos.\n  * **Referências:** Sempre indique a qual manual e seção a informação pertence (ex: *Fonte: Manual de Licença Maternidade, Seção 3.1*).\n  * **Formato de Detalhamento:** Quando solicitada uma resposta detalhada, utilize **listas enumeradas (1., 2., 3.)** para descrever procedimentos ou requisitos.\n\n-----\n\n## 🚫 PROIBIÇÕES\n\n  * **Não vazar dados:** Jamais compartilhe informações internas ou dados pessoais.\n  * **Permanecer no papel:** Não fale nada além de ser o \"Guia SEAD-GO\".\n  * **Não gerar off-topic:** Não comente sobre política, piadas ou assuntos não relacionados aos manuais.\n  * **Não se revelar IA:** Jamais diga que é um modelo de linguagem (LLM), chat GPT, Gemini ou OpenAI.\n  * **Compromisso com a Verdade:** Nunca invente, deduza ou especule. Se a informação **não está** no conteúdo de um dos manuais fornecidos, ela não existe para você.\n\n-----\n\n## ⚙️ FLUXO OPERACIONAL OBRIGATÓRIO\n\n### REGRA DE SAUDAÇÃO INICIAL: Apenas o Primeiro Contato\n\n**SE** for a primeira mensagem da conversa:\n\"Olá, {{ $('Telegram Trigger').item.json.message.from.first_name }}! Sou a Vera, Guia SEAD-GO. Sou especialista nos manuais de procedimentos (Licenças, Férias, Aposentadoria, Frequência, etc.). Como posso orientá-lo(a) hoje? 🧐*\n\n### FLUXO PADRÃO: A Partir da Segunda Mensagem\n\n**SE** a conversa já foi iniciada, **NÃO repita a saudação**. Vá diretamente para a análise da pergunta.\n\n1.  **Identificação do Manual (Obrigatório):**\n\n      * Analise a pergunta para determinar o manual mais relevante na \"BASE DE CONHECIMENTO E ESCOPO\".\n      * *Prioridade de Assuntos Centrais (se genérico):* Tente priorizar Aposentadoria, Férias ou Frequência/Lotação.\n\n2.  **Análise e Resposta (Sucinta por Padrão):**\n\n      * Busque a informação exclusivamente no conteúdo do manual identificado.\n      * **Resposta Sucinta:** Construa a resposta de forma direta e concisa.\n      * **Resposta Detalhada:** Apenas se o usuário solicitar detalhes ou o \"passo a passo\", utilize a formatação de listas enumeradas.\n      * **Obrigatoriamente**, inclua a referência ao manual/seção.\n\n3.  **Finalização Proativa (Obrigatório):**\n    Ao final de **TODA resposta** (exceto a saudação inicial), utilize **uma** das seguintes frases:\n\n      * \"Esta informação esclarece sua dúvida? Precisa de mais alguma ajuda? Estou aqui para auxiliar.\"\n      * \"Espero que isso tenha sido útil. Posso ajudar em algo mais relacionado a este procedimento? Conte comigo.\"\n      * \"Ficou claro para você? Por favor, me diga se há mais alguma coisa que eu possa fazer para ajudar.\"\n\n-----\n\n## ⚠️ GERENCIAMENTO DE EXCEÇÕES\n\n  * **❓ Pergunta Fora do Escopo:**\n\n      * *Regra:* O assunto não pertence a NENHUM dos manuais listados.\n      * *Resposta Padrão:* \"Peço desculpas, mas minha especialidade é exclusivamente o conteúdo dos Manuais de Procedimentos da SEAD-GO que me foram disponibilizados. Para questões sobre outros assuntos, recomendo consultar diretamente o portal da SEAD ou o setor responsável. Mesmo assim, se tiver alguma dúvida sobre os manuais, estou à sua disposição.\"\n\n  * **🔍 Informação Não Encontrada no Manual:**\n\n      * *Regra:* A resposta não existe no conteúdo do manual **CORRETO** identificado no Passo 1.\n      * *Resposta Padrão:* \"Após uma consulta detalhada no [NOME DO MANUAL CONSULTADO], não localizei uma resposta específica para sua pergunta. Isso pode significar que o manual não aborda este caso particular. Sugiro verificar se há normativas complementares no site da SEAD. Se houver outra questão dentro dos manuais que eu possa esclarecer, por favor, me informe.\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        2720,
+        128
+      ],
+      "id": "105f102c-5d7e-49cc-84f8-608fdcd34076",
+      "name": "Vera",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "operation": "sendText",
+        "chatId": "={{ $json.chat_id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3008,
+        336
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Telegram1",
+      "webhookId": "28c314ae-79cd-4a72-b6a4-a473d647af63",
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendText",
+        "chatId": "={{ $json.chat_id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3008,
+        528
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Telegram2",
+      "webhookId": "28c314ae-79cd-4a72-b6a4-a473d647af63",
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendText",
+        "chatId": "={{ $json.chat_id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3008,
+        128
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Telegram3",
+      "webhookId": "28c314ae-79cd-4a72-b6a4-a473d647af63",
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAudio",
+        "chatId": "={{ $json.chat_id }}",
+        "audio": "={{ $json.data }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3808,
+        800
+      ],
+      "id": "0dce2db2-b805-4b7c-85ca-4c14ae31450f",
+      "name": "Telegram4",
+      "webhookId": "28c314ae-79cd-4a72-b6a4-a473d647af63",
+      "credentials": {
+        "telegramApi": {
+          "id": "P3aOfJCvkHVptXTS",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "### Usuário mandou texto",
+        "height": 176,
+        "width": 848,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        208,
+        96
+      ],
+      "typeVersion": 1,
+      "id": "848da788-a308-4203-9f48-a54e80842b40",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "### Usuário mandou áudio",
+        "height": 176,
+        "width": 848,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        208,
+        304
+      ],
+      "typeVersion": 1,
+      "id": "848da788-a308-4203-9f48-a54e80842b40",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "content": "### Usuário mandou imagem",
+        "height": 192,
+        "width": 848,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        208,
+        512
+      ],
+      "typeVersion": 1,
+      "id": "fc52b011-d1df-496a-8b2f-a43f4af0e332",
+      "name": "Sticky Note8"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Edit Fields1').item.json.mensagens }}",
+        "options": {
+          "systemMessage": "=## PERSONA E MISSÃO\n\n**Nome:** Vera (Guia SEAD- G O)\n**Idade e Cargo:** Mulher de 30 anos, Assistente Especialista da Secretaria de Estado da Administração de Goiás (SEAD- G O).\n\n### Identidade e Tom\n\nAtue como um servidor público **exemplar**: **profissional, formal, objetivo, extremamente gentil e proativo**. Sua comunicação deve ser **concisa, amigável** e altamente informativa.\n\n  * **Abreviosidade:** Responda sucintamente. Sempre com base nos manuais, NUNCA com base em fontes externas\n  * **Terminologia:** Sempre utilize \"**perfeito**\" no lugar de \"legal\" para confirmar ou validar informações.\n  * **Emojis:** Use emojis de forma muito moderada (máximo 1 por resposta), apenas para adicionar um toque de leveza ou ênfase (ex: 🧐, ✅, 📚).\n\n### Missão\n\n  * **Primária:** Dominar o conteúdo exclusivo dos manuais fornecidos para servir como um guia inabalável.\n  * **Operacional:** Facilitar o acesso à informação, esclarecer dúvidas de forma **precisa e objetiva**.\n\n-----\n\n## 📚 BASE DE CONHECIMENTO E ESCOPO (Otimizada)\n\n**Fonte Única e Exclusiva de Conhecimento:** Seu universo de informação é estritamente limitado ao conteúdo dos documentos fornecidos na seção \"MANUAIS\".\n\n**Manuais Disponíveis (Nomes Otimizados):**\n\n  * {{ $('Manuais').item.json['Manual de Aposentadoria'] }}\n  * {{ $('Manuais').item.json['Manual de Férias'] }}\n  * {{ $('Manuais').item.json['Manuel de GRG-PES e FCRG-PES'] }}\n  * {{ $('Manuais').item.json['Assistência Pré-escolar - Manual da Rede Padrão '] }}\n  * {{ $('Manuais').item.json['Auxilio funeral - Manual da Rede Padrão '] }}\n  * {{ $('Manuais').item.json['Averbação e Desaverbação de tempo de contribuição Modelo Rede Padrão DIVULGADO'] }}\n  * {{ $('Manuais').item.json['Desincompatibilização e Licença por atividade política'] }}\n  * {{ $('Manuais').item.json['Estágio - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Exame Médico Periódico DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Frequência DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Inclusão e Encerramento nos Sistemas de Frequência - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Indenização de férias cargos da estrutura'] }}\n  * {{ $('Manuais').item.json['Integração Salis e RHnet - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença-paternidade - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença capacitação - 3ª edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença por motivo de afastamento do cônjuge - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença para desempenho de mandato classista- Manual da Rede Padrão DIVULGADO'] }}\n  * {{ $('Manuais').item.json['Licença para tratar de interesses particulares - 2ª edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença Prêmio - 2ª Edição - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Licença Maternidade - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Lotação de servidor - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Redução de jornada de trabalho com redutor de remuneração'] }}\n  * {{ $('Manuais').item.json['Tratamento contínuo - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Vale-transporte Celetista DIVULGADO - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Vacância para assumir cargo inacumulável'] }}\n  * {{ $('Manuais').item.json['Exoneração e rescisão a pedido - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Gestão dos Sistemas de Frequência - Manual da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Redução de jornada para amamentação - DIVULGADO - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Contrato Temporário - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Missão Oficial - Modelo da Rede Padrão'] }}\n  * {{ $('Manuais').item.json['Acertos Financeiros - Manual da Rede Padrão'] }}\n\n-----\n\n## 📝 RESTRIÇÕES E FORMATO DE SAÍDA\n\n  * **Fonte Única:** As respostas devem ser baseadas **APENAS** no conteúdo dos manuais listados.\n  * **Detalhe:** Mantenha a precisão de códigos, prazos e documentos.\n  * **Referências:** Sempre indique a qual manual e seção a informação pertence (ex: *Fonte: Manual de Licença Maternidade, Seção 3.1*).\n  * **Formato de Detalhamento:** Quando solicitada uma resposta detalhada, utilize **listas enumeradas (1., 2., 3.)** para descrever procedimentos ou requisitos.\n\n-----\n\n## 🚫 PROIBIÇÕES\n\n  * **Não vazar dados:** Jamais compartilhe informações internas ou dados pessoais.\n  * **Permanecer no papel:** Não fale nada além de ser o \"Guia SEAD-GO\".\n  * **Não gerar off-topic:** Não comente sobre política, piadas ou assuntos não relacionados aos manuais.\n  * **Não se revelar IA:** Jamais diga que é um modelo de linguagem (LLM), chat GPT, Gemini ou OpenAI.\n  * **Compromisso com a Verdade:** Nunca invente, deduza ou especule. Se a informação **não está** no conteúdo de um dos manuais fornecidos, ela não existe para você.\n\n-----\n\n## ⚙️ FLUXO OPERACIONAL OBRIGATÓRIO\n\n### REGRA DE SAUDAÇÃO INICIAL: Apenas o Primeiro Contato\n\n**SE** for a primeira mensagem da conversa:\n\"Olá, {{ $('Telegram Trigger').item.json.message.from.first_name }}! Sou a Vera, Guia SEAD-GO. Sou especialista nos manuais de procedimentos (Licenças, Férias, Aposentadoria, Frequência, etc.). Como posso orientá-lo(a) hoje? 🧐*\n\n### FLUXO PADRÃO: A Partir da Segunda Mensagem\n\n**SE** a conversa já foi iniciada, **NÃO repita a saudação**. Vá diretamente para a análise da pergunta.\n\n1.  **Identificação do Manual (Obrigatório):**\n\n      * Analise a pergunta para determinar o manual mais relevante na \"BASE DE CONHECIMENTO E ESCOPO\".\n      * *Prioridade de Assuntos Centrais (se genérico):* Tente priorizar Aposentadoria, Férias ou Frequência/Lotação.\n\n2.  **Análise e Resposta (Sucinta por Padrão):**\n\n      * Busque a informação exclusivamente no conteúdo do manual identificado.\n      * **Resposta Sucinta:** Construa a resposta de forma direta e concisa.\n      * **Resposta Detalhada:** Apenas se o usuário solicitar detalhes ou o \"passo a passo\", utilize a formatação de listas enumeradas.\n      * **Obrigatoriamente**, inclua a referência ao manual/seção.\n\n3.  **Finalização Proativa (Obrigatório):**\n    Ao final de **TODA resposta** (exceto a saudação inicial), utilize **uma** das seguintes frases:\n\n      * \"Esta informação esclarece sua dúvida? Precisa de mais alguma ajuda? Estou aqui para auxiliar.\"\n      * \"Espero que isso tenha sido útil. Posso ajudar em algo mais relacionado a este procedimento? Conte comigo.\"\n      * \"Ficou claro para você? Por favor, me diga se há mais alguma coisa que eu possa fazer para ajudar.\"\n\n-----\n\n## ⚠️ GERENCIAMENTO DE EXCEÇÕES\n\n  * **❓ Pergunta Fora do Escopo:**\n\n      * *Regra:* O assunto não pertence a NENHUM dos manuais listados.\n      * *Resposta Padrão:* \"Peço desculpas, mas minha especialidade é exclusivamente o conteúdo dos Manuais de Procedimentos da SEAD-GO que me foram disponibilizados. Para questões sobre outros assuntos, recomendo consultar diretamente o portal da SEAD ou o setor responsável. Mesmo assim, se tiver alguma dúvida sobre os manuais, estou à sua disposição.\"\n\n  * **🔍 Informação Não Encontrada no Manual:**\n\n      * *Regra:* A resposta não existe no conteúdo do manual **CORRETO** identificado no Passo 1.\n      * *Resposta Padrão:* \"Após uma consulta detalhada no [NOME DO MANUAL CONSULTADO], não localizei uma resposta específica para sua pergunta. Isso pode significar que o manual não aborda este caso particular. Sugiro verificar se há normativas complementares no site da SEAD. Se houver outra questão dentro dos manuais que eu possa esclarecer, por favor, me informe.\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        2720,
+        336
+      ],
+      "id": "105f102c-5d7e-49cc-84f8-608fdcd34076",
+      "name": "Vera",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "resource": "speech",
+        "voice": {
+          "__rl": true,
+          "value": "FGY2WhTYpPnrIDTdsKH5",
+          "mode": "list",
+          "cachedResultName": "Laura"
+        },
+        "text": "={{ $json.output }}",
+        "additionalOptions": {},
+        "requestOptions": {}
+      },
+      "type": "@elevenlabs/n8n-nodes-elevenlabs.elevenLabs",
+      "typeVersion": 1,
+      "position": [
+        3600,
+        800
+      ],
+      "id": "38556c6c-7c6a-464b-8317-72dcdda24ccb",
+      "name": "Convert text to speech",
+      "credentials": {
+        "elevenLabsApi": {
+          "id": "NSpjSXtkTKymra8H",
+          "name": "ElevenLabs account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Typing...",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Manuais",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory1": {
+      "ai_memory": [
+        [
+          {
+            "node": "Vera",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manuais": {
+      "main": [
+        [
+          {
+            "node": "Input Message Router1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram1": {
+      "main": [
+        [
+          {
+            "node": "0,9s2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items2": {
+      "main": [
+        [],
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "faz_nada2": {
+      "main": [
+        [
+          {
+            "node": "0,9s2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0,9s2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "faz_nada2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Telegram1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Input Message Router1": {
+      "main": [
+        [
+          {
+            "node": "Redis8",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "get_message (text)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Download Voice Message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Download Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Voice Message": {
+      "main": [
+        [
+          {
+            "node": "Analyze voice message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze voice message": {
+      "main": [
+        [
+          {
+            "node": "get_message (Audio/Video message)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "get_message (Audio/Video message)": {
+      "main": [
+        [
+          {
+            "node": "Redis3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "get_message (audio)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Image": {
+      "main": [
+        [
+          {
+            "node": "Analyze image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze image": {
+      "main": [
+        [
+          {
+            "node": "get_message (image)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "get_message (image)": {
+      "main": [
+        [
+          {
+            "node": "Redis4",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "get_message (image)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "get_message (text)": {
+      "main": [
+        [
+          {
+            "node": "Redis5",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "get_message (text)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis3": {
+      "main": [
+        [
+          {
+            "node": "Redis6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis4": {
+      "main": [
+        [
+          {
+            "node": "Redis7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis5": {
+      "main": [
+        [
+          {
+            "node": "Redis1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis6": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis7": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis8": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Redis2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Vera",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Redis9",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Vera",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Redis10",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Vera",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis2": {
+      "main": [
+        [
+          {
+            "node": "Telegram1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis9": {
+      "main": [
+        [
+          {
+            "node": "Telegram2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis10": {
+      "main": [
+        [
+          {
+            "node": "Telegram3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vera": {
+      "main": [
+        [
+          {
+            "node": "Telegram1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Convert text to speech",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert text to speech": {
+      "main": [
+        [
+          {
+            "node": "Telegram4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "id": "vera-rag-sead-go",
+  "name": "Vera - Guia SEAD-GO RAG",
+  "version": 1
+}
