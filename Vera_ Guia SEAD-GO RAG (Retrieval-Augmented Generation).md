@@ -124,5 +124,3 @@ O `systemMessage` do nó `Vera` já contém a lista dos manuais e as regras de n
 
 *   [`vera_n8n_workflow.json`](./vera_n8n_workflow.json): O arquivo JSON completo do fluxo de trabalho do n8n.
 
----
-*Documentação gerada por Manus AI.*
